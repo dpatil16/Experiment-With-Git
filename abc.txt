@@ -1,1 +1,9 @@
-hii
+repo = g.get_repo("PyGithub/PyGithub")
+contents = repo.get_top_referrers()
+print(contents)
+[
+  Referrer(referrer="Google", count=4, uniques=3),
+  Referrer(referrer="stackoverflow.com", count=2, uniques=2),
+  Referrer(referrer="eggsonbread.com", count=1, uniques=1),
+  Referrer(referrer="yandex.ru", count=1, uniques=1)
+]
