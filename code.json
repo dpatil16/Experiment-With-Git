@@ -1,0 +1,29 @@
+{
+  "title": "Disk Space Used on /gpfs/concourse",
+  "description": "Disk space used on /gpfs/concourse path for specific hosts",
+  "widgets": [
+    {
+      "definition": {
+        "type": "piechart",
+        "requests": [
+          {
+            "q": "avg:system.disk.used{path:/gpfs/concourse,host:host1,host:host2}",
+            "display_type": "pie",
+            "style": {
+              "palette": "cool",
+              "line_type": "solid",
+              "line_width": "normal"
+            }
+          }
+        ],
+        "title": "Disk Space Used on /gpfs/concourse"
+      },
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 47,
+        "height": 15
+      }
+    }
+  ]
+}
