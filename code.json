@@ -1,6 +1,6 @@
 {
-  "title": "Disk Space Used on /gpfs/concourse",
-  "description": "Disk space used on /gpfs/concourse path for specific hosts",
+  "title": "Disk Space Dashboard",
+  "description": "Dashboard to monitor disk space used on specific paths",
   "widgets": [
     {
       "definition": {
@@ -20,9 +20,13 @@
       "layout": {
         "x": 0,
         "y": 0,
-        "width": 6,
-        "height": 6
+        "width": 12,
+        "height": 7
       }
     }
-  ]
+  ],
+  "layout_type": "ordered",
+  "template_variables": [],
+  "id": "your_dashboard_id",
+  "title": "Disk Space Used on /gpfs/concourse"
 }
