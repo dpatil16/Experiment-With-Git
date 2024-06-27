@@ -4,25 +4,24 @@
   "widgets": [
     {
       "definition": {
-        "type": "piechart",
+        "title": "Disk Space Used on /gpfs/concourse",
+        "title_size": "16",
+        "title_align": "left",
+        "type": "treemap",
         "requests": [
           {
             "q": "avg:system.disk.used{path:/gpfs/concourse,host:host1,host:host2}",
-            "display_type": "pie",
             "style": {
-              "palette": "cool",
-              "line_type": "solid",
-              "line_width": "normal"
+              "palette": "cool"
             }
           }
-        ],
-        "title": "Disk Space Used on /gpfs/concourse"
+        ]
       },
       "layout": {
         "x": 0,
         "y": 0,
-        "width": 47,
-        "height": 15
+        "width": 6,
+        "height": 6
       }
     }
   ]
