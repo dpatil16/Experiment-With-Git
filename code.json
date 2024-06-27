@@ -10,7 +10,7 @@
         "type": "treemap",
         "requests": [
           {
-            "q": "avg:system.disk.used{path:/gpfs/concourse,host:host1,host:host2}",
+            "q": "avg:system.disk.used{path:/gpfs/concourse,host:nalp804.na.discoverfinancial.com}",
             "style": {
               "palette": "cool"
             }
