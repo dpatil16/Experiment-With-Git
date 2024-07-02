@@ -16,17 +16,8 @@
             }
           }
         ]
-      },
-      "layout": {
-        "x": 0,
-        "y": 0,
-        "width": 12,
-        "height": 7
       }
     }
   ],
-  "layout_type": "ordered",
-  "template_variables": [],
-  "id": "your_dashboard_id",
-  "title": "Disk Space Used on /gpfs/concourse"
+  "layout_type": "ordered"
 }
