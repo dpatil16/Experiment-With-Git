@@ -10,10 +10,19 @@
         "type": "treemap",
         "requests": [
           {
-            "q": "avg:system.disk.used{path:/gpfs/concourse,host:nalp804.na.discoverfinancial.com}",
-            "style": {
-              "palette": "cool"
-            }
+            "formulas": [
+              {
+                "formula": "query1"
+              }
+            ],
+            "queries": [
+              {
+                "query": "avg:system.disk.used{path:/gpfs/concourse,host:nalp804.na.discoverfinancial.com}",
+                "data_source": "metrics",
+                "name": "query1"
+              }
+            ],
+            "response_format": "scalar"
           }
         ]
       }
